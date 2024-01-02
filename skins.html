@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			<br />
+			<br />
+			<div class="content"><!--CSS styling for the content, contains background immage pattern, border on two sides, and other styling-->
+				<h1>The Cache Collection</h1>
+				<p>Cache has its own weapon collection, the skins are themed off of the map and can drop for you after a match!
+				</p>
+			</div>
+			<br />
+			<br />
+			<div id="imagediv">	<!--A div to add a border around an image and its caption-->
+				<div class="image"><!--class to modify an immage-->
+					<img class="mySlides" src="cache_aug.jpg" alt="Radiation Hazard">
+					<img class="mySlides" src="cache_bizon.jpg" alt="Chemical Green">
+					<img class="mySlides" src="cache_famas.jpg" alt="Styx">
+					<img class="mySlides" src="cache_five-seven.jpg" alt="Hot Shot">
+					<img class="mySlides" src="cache_galil.jpg" alt="Cerberus">
+					<img class="mySlides" src="cache_glock.jpg" alt="Reactor">
+					<img class="mySlides" src="cache_mac10.jpg" alt="Nuclear Garden">
+					<img class="mySlides" src="cache_mp9.jpg" alt="Setting Sun">
+					<img class="mySlides" src="cache_negev.jpg" alt="Nuclear Waste">
+					<img class="mySlides" src="cache_p250.jpg" alt="Contamination">
+					<img class="mySlides" src="cache_sg556.jpg" alt="Fallout Warning">
+					<img class="mySlides" src="cache_tec9.jpg" alt="Toxic">
+					<img class="mySlides" src="cache_xm1014.jpg" alt="Bone Machine">
+					<a class="slideLeft" onclick="plusDivs(-1)">❮</a>
+					<a class="slideRight" onclick="plusDivs(1)">❯</a>
+				
+				</div>
+			</div>
+			<br />
+			
+	
+
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+	</div>
+
+<!-- slideshow script used from w3 schools -->
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+		     x[i].style.display = "none";
+		  }
+		  x[slideIndex-1].style.display = "block";
+		}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			
+			<br />
+			<div id="imagediv">	
+			<h1> CT Smokes </h1>
+				<br />
+				<div class="map"><!--class made for images, see class in css file -->
+				<img  id="animated" src="ctsmokes.jpg" alt="CT Smokes"><!--labeled map-->
+				</div>
+				<br />
+			</div>
+			<br />
+			
+			
+			<div class="mapcontent">
+			
+			<dl>
+				<dt><strong> A: Squeaky Door</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision out of the door </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> B: A Main</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision of the entire site</dd>
+					<dd><strong>Cons</strong>- Obscures your vision into A Main, they could be on either side of the door when it dissipates </dd>
+				<dt><strong> C: Boost Boxes</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision over mid from boost boxes</dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> D: Garage</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision over mid from garage </dd>
+					<dd><strong>Cons</strong>- T's can be on either side of the door when its dissipates </dd>
+				<dt><strong> E: Checkers</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision over the B bomb site from checkers </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> F: B Main</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures T's vision into checkers and the B bomb site from B main </dd>
+					<dd><strong>Cons</strong>- T's can travel into checkers undetected </dd>
+				
+			</dl>
+			
+			</div>
+			<br />
+		
+
+
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+	</div>
+</body>
+</html>

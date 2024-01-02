@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			<br>
+
+			<div class="content" style="overflow-x:auto;"><!-- adds scrollbar to table if it overflows -->
+				 <br>
+				<table>
+					<caption>Terrorist Exclusive Weapons</caption>
+					  <thead>
+						<tr><!-- header row-->
+							<th>Type</th>
+							<th>Silhouette</th>
+							<th>Name</th>
+							<th>Cost</th>
+							<th>Kill Reward</th>
+							<th>Extra Ammo</th>
+							<th>Damage</th>
+							<th>Movement Speed</th>
+						</tr>
+					  </thead>
+						  <tbody>
+							  <tr><!-- glock -->
+								<td rowspan="2" class="guntype">Pistol</td>
+								<td><img src="glock.png" alt="Glock-18"></td>
+								<td>Glock-18</td>
+								<td>$200</td>
+								<td>$300</td>
+								<td>120</td>
+								<td>28</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!-- tec9 -->
+								<td><img src="tec9.png" alt="Tec-9"></td>
+								<td>Tec-9</td>
+								<td>$500</td>
+								<td>$300</td>
+								<td>120</td>
+								<td>33</td>
+								<td>240</td>
+							  </tr>
+							  
+							  <tr><!-- sawed off -->
+							  	<td class="guntype">Heavy</td>
+								<td><img src="sawedoff.png" alt="Sawed Off"></td>
+								<td>Sawed Off</td>
+								<td>$1200</td>
+								<td>$900</td>
+								<td>32</td>
+								<td>32</td>
+								<td>210</td>
+							  </tr>
+
+							   <tr><!--mac10 -->
+							  	<td class="guntype">SMG</td>
+								<td><img src="mac10.png" alt="Mac-10"></td>
+								<td>Mac-10</td>
+								<td>$1050</td>
+								<td>$600</td>
+								<td>100</td>
+								<td>29</td>
+								<td>240</td>
+							  </tr>
+
+							   <tr><!-- ak -->
+							  	<td rowspan="4" class="guntype">Rifle</td>
+								<td><img src="ak47.png" alt="AK-47"></td>
+								<td>AK-47</td>
+								<td>$2700</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>36</td>
+								<td>215</td>
+							  </tr>
+
+							   <tr><!--galil -->
+								<td><img src="galil.png" alt="Galil AR"></td>
+								<td>Galil AR</td>
+								<td>$2000</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>30</td>
+								<td>215</td>
+							  </tr>
+
+							   <tr><!-- sg -->
+								<td><img src="sg.png" alt="SG 553"></td>
+								<td>SG 553</td>
+								<td>$3000</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>30</td>
+								<td>210</td>
+							  </tr>
+
+							   <tr><!-- t autosniper-->
+								<td><img src="g3sg1.png" alt="G4SG1"></td>
+								<td> G3SG1</td>
+								<td>$5000</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>80</td>
+								<td>215</td>
+							  </tr>
+							</tbody>
+
+							 <tfoot>
+								<tr><!--footer -->
+									<th>Type</th>
+									<th>Silhouette</th>
+									<th>Name</th>
+									<th>Cost</th>
+									<th>Kill Reward</th>
+									<th>Extra Ammo</th>
+									<th>Damage</th>
+									<th>Movement Speed</th>
+								</tr>
+					  		</tfoot>
+				</table>
+			
+			</div>
+
+			<br>
+
+			<div class="content" style="overflow-x:auto;"><!-- Table about the band's releases -->
+				<table>
+					<caption>CT Exclusive Weapons</caption>
+					  <thead>
+						<tr>
+							<th>Type</th>
+							<th>Silhouette</th>
+							<th>Name</th>
+							<th>Cost</th>
+							<th>Kill Reward</th>
+							<th>Extra Ammo</th>
+							<th>Damage</th>
+							<th>Movement Speed</th>
+						</tr>
+					  </thead>
+						  <tbody>
+							  <tr><!--five seven -->
+								<td rowspan="3" class="guntype">Pistol</td>
+								<td><img src="fiveseven.png" alt="Five-SeveN"></td>
+								<td>Five-SeveN</td>
+								<td>$500</td>
+								<td>$300</td>
+								<td>100</td>
+								<td>32</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!-- p2000 -->
+								<td><img src="p2000.png" alt="P2000"></td>
+								<td>P2000</td>
+								<td>$200</td>
+								<td>$300</td>
+								<td>62</td>
+								<td>35</td>
+								<td>240</td>
+							  </tr>
+							  
+							  <tr><!-- usps -->
+								<td><img src="usps.png" alt="USP-S"></td>
+								<td>USP-S</td>
+								<td>$200</td>
+								<td>$300</td>
+								<td>24</td>
+								<td>35</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!-- swag 7 -->
+							  	<td class="guntype">Heavy</td>
+								<td><img src="mag7.png" alt="Mag-7"></td>
+								<td>Mag-7</td>
+								<td>$1800</td>
+								<td>$900</td>
+								<td>32</td>
+								<td>30</td>
+								<td>225</td>
+							  </tr>
+
+							   <tr><!-- mp9 -->
+							  	<td class="guntype">SMG</td>
+								<td><img src="mp9.png" alt="MP9"></td>
+								<td>MP9</td>
+								<td>$1250</td>
+								<td>$600</td>
+								<td>120</td>
+								<td>26</td>
+								<td>240</td>
+							  </tr>
+
+							   <tr><!-- m4a4 -->
+							  	<td rowspan="5" class="guntype">Rifle</td>
+								<td><img src="m4a4.png" alt="M4a4"></td>
+								<td>M4A4</td>
+								<td>$3100</td>
+								<td>300</td>
+								<td>90</td>
+								<td>33</td>
+								<td>225</td>
+							  </tr>
+
+							   <tr><!-- m4a1 -->
+								<td><img src="m4a1.png" alt="M4A1-S"></td>
+								<td>M4A1-S</td>
+								<td>$3100</td>
+								<td>$300</td>
+								<td>40</td>
+								<td>33</td>
+								<td>225</td>
+							  </tr>
+
+							  <tr><!--  aug -->
+								<td><img src="aug.png" alt="AUG"></td>
+								<td>AUG</td>
+								<td>$3300</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>28</td>
+								<td>220</td>
+							  </tr>
+
+							   <tr><!-- famas -->
+								<td><img src="famas.png" alt="FAMAS"></td>
+								<td>FAMAS</td>
+								<td>$2250</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>30</td>
+								<td>220</td>
+							  </tr>
+
+							   <tr><!-- ct autosniper -->
+								<td><img src="scar20.png" alt="Scar-20"></td>
+								<td>Scar-20</td>
+								<td>$5000</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>80</td>
+								<td>215</td>
+							  </tr>
+							</tbody>
+
+							 <tfoot>
+								<tr><!-- footer -->
+									<th>Type</th>
+									<th>Silhouette</th>
+									<th>Name</th>
+									<th>Cost</th>
+									<th>Kill Reward</th>
+									<th>Extra Ammo</th>
+									<th>Damage</th>
+									<th>Movement Speed</th>
+								</tr>
+					  		</tfoot>
+				</table>
+			
+			</div>
+			<br>
+
+			<div class="content" style="overflow-x:auto;"><!-- Table about the band's releases -->
+				<table>
+					<caption>Shared Weapons</caption>
+					  <thead>
+						<tr><!-- header row -->
+							<th>Type</th>
+							<th>Silhouette</th>
+							<th>Name</th>
+							<th>Cost</th>
+							<th>Kill Reward</th>
+							<th>Extra Ammo</th>
+							<th>Damage</th>
+							<th>Movement Speed</th>
+						</tr>
+					  </thead>
+						  <tbody>
+							  <tr><!--cz -->
+								<td rowspan="4" class="guntype">Pistol</td>
+								<td><img src="cz75.png" alt="CZ75-Auto"></td>
+								<td>CZ75-Auto</td>
+								<td>$500</td>
+								<td>$300</td>
+								<td>12</td>
+								<td>33</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!--deagle -->
+								<td><img src="deagle.png" alt="Desert Eagle"></td>
+								<td>Desert Eagle</td>
+								<td>$700</td>
+								<td>$300</td>
+								<td>35</td>
+								<td>63</td>
+								<td>230</td>
+							  </tr>
+							  
+							  <tr><!--dualies -->
+								<td><img src="dualies.png" alt="Dual Berettas"></td>
+								<td>Dual Berettas</td>
+								<td>$500</td>
+								<td>$300</td>
+								<td>120</td>
+								<td>38</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!-- p250 -->
+								<td><img src="p250.png" alt="P250"></td>
+								<td>P250</td>
+								<td>$300</td>
+								<td>$300</td>
+								<td>52</td>
+								<td>35</td>
+								<td>240</td>
+							  </tr>
+
+
+							  <tr><!-- nova  -->
+							  	<td rowspan="4" class="guntype">Heavy</td>
+								<td><img src="nova.png" alt="Nova"></td>
+								<td>Nova</td>
+								<td>$1200</td>
+								<td>$900</td>
+								<td>32</td>
+								<td>26</td>
+								<td>220</td>
+							  </tr>
+
+							  <tr><!-- xm1104-->
+								<td><img src="xm.png" alt="XM1104"></td>
+								<td>XM1104</td>
+								<td>$2000</td>
+								<td>$900</td>
+								<td>32</td>
+								<td>20</td>
+								<td>215</td>
+							  </tr>
+
+							  <tr><!-- m249 -->
+								<td><img src="m249.png" alt="M249"></td>
+								<td>M249</td>
+								<td>$5200</td>
+								<td>$300</td>
+								<td>200</td>
+								<td>32</td>
+								<td>195</td>
+							  </tr>
+
+							  <tr><!-- Negev -->
+								<td><img src="negev.png" alt="Negev"></td>
+								<td>Negev</td>
+								<td>$5700</td>
+								<td>$300</td>
+								<td>200</td>
+								<td>35</td>
+								<td>195</td>
+							  </tr>
+
+							   <tr><!-- mp7 -->
+							  	<td rowspan="4" class="guntype">SMG</td>
+								<td><img src="mp7.png" alt="MP7"></td>
+								<td>MP7</td>
+								<td>$1700</td>
+								<td>$600</td>
+								<td>120</td>
+								<td>29</td>
+								<td>220</td>
+							  </tr>
+
+							  <tr><!--ump -->
+								<td><img src="ump.png" alt="UMP"></td>
+								<td>UMP</td>
+								<td>$1200</td>
+								<td>$600</td>
+								<td>100</td>
+								<td>35</td>
+								<td>230</td>
+							  </tr>
+
+							  <tr><!-- bizon -->
+								<td><img src="bizon.png" alt="PP-Bizon"></td>
+								<td>PP-Bizon</td>
+								<td>$1400</td>
+								<td>$600</td>
+								<td>120</td>
+								<td>27</td>
+								<td>240</td>
+							  </tr>
+
+							  <tr><!-- pro90 -->
+								<td><img src="p90.png" alt="P90"></td>
+								<td>P90</td>
+								<td>$2350</td>
+								<td>$300</td>
+								<td>100</td>
+								<td>26</td>
+								<td>230</td>
+							  </tr>
+
+							   <tr><!-- scout  -->
+							  	<td rowspan="2" class="guntype">Rifle</td>
+								<td><img src="scout.png" alt="Scout"></td>
+								<td>Scout/SSG 08</td>
+								<td>$1700</td>
+								<td>$300</td>
+								<td>90</td>
+								<td>88</td>
+								<td>230</td>
+							  </tr>
+
+							   <tr><!-- awp -->
+								<td><img src="awp.png" alt="AWP"></td>
+								<td>AWP</td>
+								<td>$4750</td>
+								<td>$100</td>
+								<td>30</td>
+								<td>115</td>
+								<td>200</td>
+							  </tr>
+
+							</tbody>
+
+							 <tfoot>
+								<tr><!--  footer row-->
+									<th>Type</th>
+									<th>Silhouette</th>
+									<th>Name</th>
+									<th>Cost</th>
+									<th>Kill Reward</th>
+									<th>Extra Ammo</th>
+									<th>Damage</th>
+									<th>Movement Speed</th>
+								</tr>
+					  		</tfoot>
+				</table>
+			
+			</div>
+			<br>
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+
+	</div>
+</body>
+</html>

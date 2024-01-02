@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script> $(function() { 
+
+		$( "#slider" ).slider({ 
+			value:0, 
+			min:0,
+			max:10,
+			step:1,
+
+			slide: function( event, ui ) {
+				$("#siterating").val( ui.value + " out of 10");
+			}
+		});
+
+		$( "#siterating").val("Please Move The Slider");
+
+	 }); </script>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			<div class="content">
+				<br><h1>Feedback</h1><br>
+				All information in this form is for my use only and will not be distributed. <br><br>
+			</div><br>
+
+			<div class="content">
+				<form name=projectform id="myForm" action="sub_form.php" method="post">
+					<!--field set to designate contact information portion of the form -->
+					<fieldset name="Contact Information">
+						<!-- Legend to accessability purposes -->
+						<legend>Contact Information</legend>
+							<!--Input labels and fields -->
+							<label>Steam Name: </label><br>
+								 <input type="text" name="steamName" value="" onChange="validateID()" required><br>
+
+							<label>Email:</label><br> 
+								<input type="email" name="emailAddie" value="" onChange="validateEmail()" required><br>
+
+							<label>Steam Profile URL (ex:http://steamcommunity.com/id/username/)</label><br>
+								<input type="text" name="site" value="" onChange="validateSite()" required><br>
+
+					</fieldset>
+
+					<!-- field set to designate order information portion of the form-->
+					<fieldset name="Comments">
+						<!-- Legend to accessability purposes -->
+						<legend>Comments and Info</legend>
+
+							<label for="siterating">Website Rating<label><br>
+								<input type="text" name="slidertext" id="siterating" onChange="validateSlider()">
+								<br><br>
+								<div id="slider"></div><br>
+							
+							<!-- contact method-->
+							<label>Match Making Rank?</label>
+							 <br>
+								<select name="rank">
+								    <option value="Silver">Silver</option>
+								    <option value="GoldNova">Gold Nova</option>
+								    <option value="MG">Master Guardian</option>
+								    <option value="LE">Legendary Eagle</option>
+								    <option value="Supreme">Surpreme Master First Class</option>
+								    <option value="GE">The Global Elite</option>
+								</select>
+								
+								  <br><br>
+								    <label>What is your experience with Counter Strike: Global Offensive?</label><br>
+									  	<input type="radio" name="exp" value="beginner" checked>New to the game: Beginner<br>
+				  						<input type="radio" name="exp" value="somewhatnew">I've played a bit before: Kinda New<br>
+				  						<input type="radio" name="exp" value="veteran">I have played a lot of CS:GO : Veteran <br>
+				  						<input type="radio" name="exp" value="pro">Pro. <br>
+				  					
+								<br>
+								<label>Comments? Suggestions? Typos? </label><br>
+								<textarea rows="6" cols="70" name="comment">Add Comments Here</textarea>
+								<br>
+
+								
+							
+								<!-- reset form button-->
+								<button class="buttons" type="reset" value="Reset">Reset</button>
+								<button class="buttons" type="submit" value="Submit">Submit</button><br>
+
+						</fieldset>
+
+				</form>
+			</div><br>
+
+
+	<script>
+		
+		function validateID() {
+			var nameVar = document.projectform.steamName.value;
+			var namePattern = /^([A-Za-z0-9._-]){2,32}|$/;
+
+				if(namePattern.test(nameVar)) {
+					;
+				}
+
+				else {
+					alert("Please Enter a Valid Steam ID")
+				}
+		}
+		
+		//validates URL 
+		function validateSite(){
+			var webVar = document.projectform.site.value;
+			var webSitePattern = /^((http|https)([:])([/])([/])|)(steamcommunity.com[/]id[/])([A-Za-z0-9._-]){2,32}([/]|)$/;
+			
+				if(webSitePattern.test(webVar)) {
+					;
+				}
+				else {
+					alert("Enter a valid steamcommunity profile URL")
+				}
+			}
+
+		//validates email, only allows .edu .com and .net domains
+		function validateEmail() {
+			var emailVar = document.projectform.emailAddie.value;
+			var emailPattern = /^([A-Za-z0-9._-]){2,100}(@)([A-Za-z0-9._-]){2,100}(.edu|.com|.net)$/;
+
+				if(emailPattern.test(emailVar)) {
+					;
+				}
+
+				else {
+					alert("enter a valid Email Address")
+				}
+		}
+
+		function validateSlider() {
+			var sliderVar = document.projectform.slidertext.value;
+			var sliderPattern = /^([0-9]|10) out of 10$/;
+
+				if(sliderPattern.test(sliderVar)) {
+					;
+				}
+
+				else {
+					alert("Please adjust the slider to a correct value")
+				}
+		}
+
+		
+	</script>
+
+
+
+
+			
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+	</div>
+</body>
+</html>
+

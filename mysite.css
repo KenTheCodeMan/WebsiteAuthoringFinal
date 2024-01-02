@@ -1,0 +1,606 @@
+/*
+Name: Kenneth Tidwell 
+Current Date: 3/25/2016
+Class / Assignment: CGS1820 Homework Project 2
+Language: CSS
+Purpose: Start of Final Project
+
+*/
+
+html, body, header, h1{
+    padding: 0;
+    margin: 0;
+
+} /*This is a reset that reduces browser inconsistencies */
+
+/*adds background immage to the page*/
+html {
+    background: url(background.jpg) no-repeat center fixed; 
+    background-size: cover;
+}
+/* Adds a 30% padding on the sides of the page to reveal the background image */
+#wrapper {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* changes font title and size */
+#titlefont {
+	font-family: 'Rock Salt', cursive;
+	font-size: 300%;
+}
+
+/* changes font in the header and adds a background patter for the divs in the header */
+header {
+	font-family: "Ubuntu Mono";
+	background-image: url(divbackground.png);
+	
+}
+/* Border attributes for the header */
+#headerborder {
+	border-style: ridge;
+    border-width: 13px;
+	border-color: #02178D;
+}
+/* Modifies immage to fit in the div, adds margins */
+.bannerpic img{
+	
+	display: block;
+	max-width:100%;
+	max-height:100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+
+/* adds margin and changes color of the text */
+h1 {
+	margin-top: 20px;
+	color: #000000;
+	font-family: 'Rock Salt', cursive;
+	animation-duration: 1s;
+	animation-name: slidein;
+	white-space: nowrap;
+}
+/* changes background color, also changes font and font size, added antialiasing for specific browsers */
+body { 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	font-size: 18px;
+	text-align: center;
+	-moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+	
+}
+/* auto fits margins, adds background patter, adds borders to left and right, and defines border attributes */
+main {	
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(mainbackground.png);
+	border-right-style: ridge;
+	border-left-style: ridge;
+	border-width: 13px;
+	border-color: #02178D;
+	
+}
+
+/* adds the following attributes to the images with the image class: adds border, padding, center align on page, adds background patter*/
+#imagediv {
+	box-shadow: 0 0 13px 1px #0A0A3D;
+	padding: 5px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(divbackground.png);
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+}
+/* Ensures image fits in the div  */
+.image img{
+	width: 100%;
+	height: auto;
+}
+/* ensures the map fits in the div */
+.map img{
+	width: 70%;
+	height: auto;
+}
+
+#accordion {
+	background-image: url(divbackground.png);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 5px;
+	line-height: 150%;
+}
+
+/* adds background pattern, adjust width of the div, adds border and padding */
+.content {
+	background-image: url(divbackground.png);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 5px;
+	line-height: 150%;
+}
+/* attributes for divs with this class, consistant with website */
+.mapcontent {
+	background-image: url(divbackground.png);
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 2%;
+	line-height: 150%;
+	text-align: left;
+}
+
+/* used to change font */
+.maptext {
+	font-size: 100%;
+	text-decoration: underline;
+	font-family: 'Righteous', cursive;
+}
+/*  detailed list attribute to add padding*/
+dt {
+	padding: 10px;
+	font-family: 'Righteous', cursive;
+	font-size: 100%;
+	text-decoration: underline;
+}
+/* div stuff for 2 column page of terminology  */
+.columnwrapper {
+	width: 90%;
+	display: inline-block;
+	background-image: url(divbackground.png);
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 5px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+/* attributes for the left column, allows centerting within the div */
+.termleft {
+	margin: 1%;
+	float: left;
+	width: 15%;
+	height: 100px;
+	border-style: inset;
+	border-color: #01003D;
+	display: table;
+	font-family: 'Oswald', sans-serif;
+	font-size: 150%;
+	background-image: url(greybackground.png);
+	word-wrap: break-word;
+}
+
+/* background, font and text size */
+.guntype {
+	background-image: url(greybackground.png);
+	font-size: 150%;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* titles for tables  */
+.teamguns {
+	color: #000000;
+	font-family: 'Rock Salt', cursive;
+	font-size: 120%;
+	font-weight: bold;
+
+}
+/* attributes for right column, allows full centerting within the div */
+.termright {
+	margin: 1%;
+	float: left;
+	width:  80%;
+	height: 100px;
+	border-style: inset;
+	border-color: #01003D;
+	display: table;
+	background-image: url(greybackground.png);
+}
+
+/* changes display to table-cell so I can center text vertically as well as horizontally */
+.termrighttext {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* Media queries for terms */
+
+@media only screen and (max-width: 900px) {
+	
+	.termleft {
+		width: 98%;
+	}
+
+	.termright {
+		width: 98%;
+	}
+
+}
+
+/* changes font size to be 90% of the assigned in the body, and text aligns center, adds border and background pattern*/
+footer {
+	font-size: 90%;
+	text-align: center;
+	border-style: ridge;
+    border-width: 13px;
+	border-color: #02178D;
+	background-image: url(divbackground.png);
+}
+
+/* adds borders to the div in terms of % */
+* { box-sizing:border-box; }
+
+
+/*  places a float in the LI, causing it to stack horizontially instead of vertically */
+.navbar li {
+    display: inline-block;
+	}
+
+/* unordered list attributes */
+.navbar ul {
+    list-style-type: none;
+	padding: 0;
+    background-color: #111;
+	border-style: solid;
+	border-width: 5px;
+	font-size: 130%;
+	font-family: 'Righteous', cursive;
+}
+/* list items text attributes */
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+/* changes text color on hover */
+.navbar li a:hover {
+    background-color: #333;
+}
+/* applies to dropdown button  */
+.dropbtn {
+    background-color: #111;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+	font-family: 'Righteous', cursive;
+	font-size: 100%;
+	min-width: 313px;
+	
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	
+}
+/* applies attributes to the drop down box */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 313px;
+    z-index: 1;
+}
+/* applies attributes to text within the drop down menu */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+	font-family: 'Righteous', cursive;
+}
+
+.dropdown-content a:hover {
+	background-color: #333
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* changes background color of button when mouse hovers over it */
+.dropdown:hover .dropbtn {
+	background-color: #333
+}
+
+/* clearfix class is to fix issues that involve using a float and a dropdown menu together. */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+
+/* changes all the borders, size, color, and padding */
+table, th, td{
+    border-collapse: collapse;
+    border: 3px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+/* changes background color and text color */
+th {
+	background-color: #0C0F14;
+	color: white;
+}
+
+/* formats table to fit page */
+table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+caption {
+	margin-top: 20px;
+	color: #000000;
+	font-family: 'Rock Salt', cursive;
+	font-size: 200%;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+/* changes every other table row color */
+tr:nth-child(even){background-color: #1B3661}
+
+form {
+	text-align: left;
+}
+
+.buttons {
+	width: 100px;
+	height: 40px;
+	background-color: #111;
+	color: white;
+
+}
+
+footer a {
+	font-size: 140%;
+	text-decoration: none;
+	color: blue;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 60%;
+}
+
+.videoWrapper iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+#accordion .accordion-title, #accordion .accordion-content {
+     background: #111;
+     outline: none;   
+     color: white;
+	 font-family: 'Righteous', cursive;
+	 font-size: 100%;
+}
+
+#animated {
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+
+
+
+
+@keyframes slidein {
+	from {
+		margin-left: 300%;
+
+	}
+
+	to {
+		margin-left: 0%;
+
+	}
+}
+
+#slider {
+	width:45%;
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.videoWrapper {
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	
+	.videoWrapper {
+		height: 300px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.videoWrapper {
+		height: 250px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	
+	.videoWrapper {
+		height: 250px;
+	}
+}
+
+/* classes for divs for the parallax page,  */
+.parallax1 {
+    background-image: url(tspawn.jpg);
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url(mid.jpg);
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url('garage.png');
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax4 {
+    background-image: url('blong.jpg');
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax5 {
+
+    background-image: url('asite.jpg');
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax6 {
+    background-image: url('along.jpg');
+    height: 92%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* added for parralax page */
+body, html {
+    height: 100%;
+}
+/* custom caption divs for parralax page */
+.parallaxcap {
+	height: 100px;
+	background-image: url(divbackground.png);
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 5px;
+	line-height: 150%;
+	font-size: 200%;
+	font-family: 'Rock Salt', cursive;
+}
+/* custom div for parralax page  */
+.parallaxcontent {
+	background-image: url(divbackground.png);
+	margin-left: auto;
+	margin-right: auto;
+	border-style: double;
+    border-width: 10px;
+	border-color: #0A0A3D;
+	padding: 5px;
+	line-height: 150%;
+	font-size: 150%;
+}
+/* slideshow gallery button right */
+.slideRight {
+
+	text-align:center;
+	color:#fff;
+	background-color:#000;
+	position:relative;
+	z-index:1;
+	padding:0;
+	cursor:pointer;
+	font-size:24px;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	position:relative;
+	left: 42.5%;
+	top: -70px;
+	display:inline-block;
+}
+
+/* slideshow gallery button left */
+.slideLeft {
+	text-align:center;
+	color:#fff;
+	background-color:#000;
+	position:relative;
+	z-index:1;
+	padding:0;
+	cursor:pointer;
+	font-size:24px;
+	width:60px;
+	height:60px;
+	line-height:60px;
+	position:relative;
+	right: 42.5%;
+	top: -70px;
+	display:inline-block;
+}

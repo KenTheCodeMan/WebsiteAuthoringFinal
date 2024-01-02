@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			
+			<br />
+			<div id="imagediv">	
+			<h1> Terrorist Smokes </h1>
+				<br />
+				<div class="map"><!--class made for images, see class in css file -->
+				<img id="animated" src="terroristsmokes.jpg" alt="T Smokes"><!--labeled map-->
+				</div>
+				<br />
+			</div>
+			<br />
+			
+			
+			<div class="mapcontent">
+			
+			<dl>
+				<dt><strong> A: Between Squeaky and Site</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures vision for CTs behind quad and in the corner </dd>
+					<dd><strong>Cons</strong>- CT's can hide behind this smoke for easy backstabs if unchecked </dd>
+				<dt><strong> B: A Main</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision into A main </dd>
+					<dd><strong>Cons</strong>- Lose all sight of the bomb site</dd>
+				<dt><strong> C: Between Redbox and Forklift</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision from truck and highway, very effective for taking the A bombsite</dd>
+					<dd><strong>Cons</strong>- CTs can use it to sneak into the site </dd>
+				<dt><strong> D: Truck</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision from truck </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> E: Highway</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision from highway into the A bomb site </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> F: Whitebox</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision down highway and towards mid depending on position </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> G: "Z"</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision over mid from the Z hallway, great for dealing with AWPers </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> H: Sandbags</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision over mid from the sandbags, great for dealing with AWPers </dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> I: Heaven</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision over the B bomb site from heaven</dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+				<dt><strong> J: B Main</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision into B main and allows travel into checkers undetected </dd>
+					<dd><strong>Cons</strong>- Obscures your teams vision into the bombsite</dd>
+				<dt><strong> K: Tree Room</strong></dt> 
+					<dd><strong>Pros</strong>- Obscures CTs vision into the B bomb site from the tree room</dd>
+					<dd><strong>Cons</strong>- Minimal Problems </dd>
+			</dl>
+			
+			
+			</div>
+			<br />
+		
+
+
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+	</div>
+</body>
+</html>

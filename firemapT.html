@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cache Money</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="mysite.css">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+</head>
+
+<!--
+Name: Kenneth Tidwell 
+Current Date: 7/19/2016
+Class / Assignment: CGS1821 Final Project
+Language: HTML5
+Purpose: Build a website using everything we have learned 
+Includes: mysite.css
+-->
+<body>
+	<!-- wrapper to expose background picture on the page-->
+	<div id="wrapper">
+		
+		<header id="headerborder"><!--adds border to the header-->
+				<strong id="titlefont">Cache Money</strong>
+				<div class="bannerpic"><!--class for the banner to fit in the header-->
+					<img src="banner.jpg" alt="Banner">
+				</div>
+				<div class="navbar"><!-- Nav Bar -->
+					<ul class="clearfix"><!--clearfix fixes issues that float and drop down menus cause-->
+						<li><a class=active href="index.html">Home</a></li>
+						<li><a href="map.html">Map Information</a></li>
+						<li><a href="Termonology.html">Terminology </a></li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Team Specific Information</button>
+							<div class="dropdown-content">
+								<a href="smokemapCT.html">CT Smokes</a>
+								<a href="smokemapT.html">T Smokes</a>
+								<a href="firemapCT.html">CT Fires</a>
+								<a href="firemapT.html">T Fires</a>
+								<a href="weapons.html">Weapons Information</a>
+							</div>
+						</li>
+						<li class="dropdown"><!--dropdown button for links-->
+							<button class="dropbtn">Media And Other Stuff</button>
+							<div class="dropdown-content">
+								<a href="plays.html">Plays</a>
+								<a href="screenshots.html">Screenshots</a>
+								<a href="skins.html">Gun Skins</a>
+							</div>
+						</li>
+							
+					</ul>
+					
+				</div>
+			</header>
+
+		<main>
+			
+			<br />
+			<div id="imagediv">	
+				<h1> Terrorist Fires</h1>
+					<br />
+						<div class="map"><!--class made for images, see class in css file -->
+							<img  id="animated" src="terroristfires.jpg" alt="T Fires"><!--labeled map-->
+						</div>
+					<br />
+			</div>
+			<br />
+			
+			<div class="mapcontent">
+			
+			<dl>
+				<dt><strong> A: Quad, Back Corner of Site</strong></dt> 
+					<dd><strong>Pros</strong>- Removes CTs from corner of the site </dd>
+					<dd><strong>Cons</strong>- Minimal problems </dd>
+					
+				<dt><strong> B: Wall Against Squeaky</strong></dt> 
+					<dd><strong>Pros</strong>- Removes CTs from that corner </dd>
+					<dd><strong>Cons</strong>- Minimal problems </dd>
+					
+				<dt><strong> C: Forklift</strong></dt> 
+					<dd><strong>Pros</strong>- Removes CTs from standing around forklift</dd>
+					<dd><strong>Cons</strong>- Minimal problems </dd>
+					
+				<dt><strong> D: Truck</strong></dt> 
+					<dd><strong>Pros</strong>- Stops CTs from rotating through the truck area </dd>
+					<dd><strong>Cons</strong>- Your team will unable to flank highway until it clears </dd>
+					
+				<dt><strong> E: White Box </strong></dt> 
+					<dd><strong>Pros</strong>- Removes CTs from behind the box</dd>
+					<dd><strong>Cons</strong>- Can block travel down highway to the A bomb site</dd>
+					
+				<dt><strong> F: "Z"</strong></dt> 
+					<dd><strong>Pros</strong>- Stops CTs going through the hallway </dd>
+					<dd><strong>Cons</strong>- Blocks travel into CT spawn from mid </dd>
+					
+				<dt><strong> G: Sandbags</strong></dt> 
+					<dd><strong>Pros</strong>- Great for flushing CTs who are hiding there into the open for an easy kill </dd>
+					<dd><strong>Cons</strong>- Minimal problems </dd>
+					
+				<dt><strong> H: Ninja Box </strong></dt> 
+					<dd><strong>Pros</strong>- Great for flushing CTs who are hiding behind the box for an easy kill </dd>
+					<dd><strong>Cons</strong>-  Minimal problems</dd>
+					
+				<dt><strong> I: Vents </strong></dt> 
+					<dd><strong>Pros</strong>-  Keeps CTs from coming through vents and traveling through the doorway</dd>
+					<dd><strong>Cons</strong>- Also limits your teams travel through the area </dd>
+					
+				<dt><strong> J: B Main Box</strong></dt> 
+					<dd><strong>Pros</strong>- Flushes out CTs hiding behind the box for an easy kill </dd>
+					<dd><strong>Cons</strong>-  This fire can block travel through the door to checkers</dd>
+					
+				<dt><strong> K: Heaven </strong></dt> 
+					<dd><strong>Pros</strong>- Removes CTs from heaven </dd>
+					<dd><strong>Cons</strong>- Minimal problems  </dd>
+					
+				<dt><strong> L: Tree Room </strong></dt> 
+					<dd><strong>Pros</strong>- Stops travel from tree room to the bomb site </dd>
+					<dd><strong>Cons</strong>- Keeps your team within the bomb site </dd>
+					
+				<dt><strong> M: Headshot </strong></dt> 
+					<dd><strong>Pros</strong>- Flushes CTs out of the headshot area </dd>
+					<dd><strong>Cons</strong>- Minimal problems </dd>
+					
+				<dt><strong> N: Back of Site</strong></dt> 
+					<dd><strong>Pros</strong>- Flushes CTs out of the back of the site</dd>
+					<dd><strong>Cons</strong>- Can prevent your team from planting the bomb there</dd>
+			
+			</dl>
+			
+			</div>
+			<br />
+		
+
+
+		</main>
+
+		<footer><!--Footer for copyright and contact information-->
+			<a href="feedback.html">Feedback?</a>
+			<br>Copyright &copy; 2016 Kenneth Tidwell <br><a href="mailto:tidwellkenneth@gmail.com">tidwellkenneth@gmail.com</a> &nbsp;<br> &nbsp;
+		</footer>
+	</div>
+</body>
+</html>
